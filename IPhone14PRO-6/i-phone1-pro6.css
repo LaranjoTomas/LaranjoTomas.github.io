@@ -1,0 +1,75 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.i-phone1-pro6-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .i-phone1-pro6-i-phone1-pro6 {
+    width: 100%;
+    height: 852px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .i-phone1-pro6-img03271 {
+    top: 0px;
+    left: -1px;
+    width: 394px;
+    height: 852px;
+    position: absolute;
+  }
+  .i-phone1-pro6-image32143908757542018947071054243334455801302276n {
+    top: 108px;
+    left: -1px;
+    width: 394px;
+    height: 540px;
+    position: absolute;
+  }
+  .i-phone1-pro6-ellipse50 {
+    top: 709px;
+    left: 320px;
+    width: 52px;
+    height: 48px;
+    position: absolute;
+  }
+  .i-phone1-pro6-ellipse51 {
+    top: 714px;
+    left: 327px;
+    width: 41px;
+    height: 41px;
+    position: absolute;
+  }
+  .i-phone1-pro6-arrowsmallleft11 {
+    top: 704px;
+    left: 321px;
+    width: 53px;
+    height: 57px;
+    position: absolute;
+  }
+  @media(max-width: 2800px) {
+    .i-phone1-pro6-i-phone1-pro6 {
+      width: 393px;
+    }
+  }
+  

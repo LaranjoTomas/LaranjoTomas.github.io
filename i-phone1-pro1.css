@@ -1,0 +1,312 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.i-phone1-pro1-container {
+  width: 100%;
+  max-width: 393px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+  }
+  .i-phone1-pro1-i-phone1-pro1 {
+    width: 100%;
+    height: 852px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .i-phone1-pro1-f23b259ec77e9dc83ffd2f41deb059e61 {
+    top: -299px;
+    left: -234px;
+    width: 393px;
+    height: 852px;
+    position: absolute;
+  }
+  .i-phone1-pro1-text {
+    top: 61px;
+    left: 48px;
+    color: rgba(22, 24, 38, 1);
+    width: 202px;
+    height: auto;
+    position: absolute;
+    font-size: 26px;
+    font-weight: SemiBold;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .i-phone1-pro1-text02 {
+    top: 62px;
+    left: 48px;
+    color: rgba(22, 24, 38, 1);
+    width: 297px;
+    height: auto;
+    position: absolute;
+    font-size: 26px;
+    font-weight: SemiBold;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .i-phone1-pro1-group2 {
+    top: 239px;
+    left: 52px;
+    width: 289px;
+    height: 36px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background-color: rgba(231, 231, 231, 1);
+  }
+  .i-phone1-pro1-text04 {
+    top: 7px;
+    left: 88px;
+    color: rgba(123, 123, 123, 1);
+    width: 112px;
+    height: auto;
+    position: absolute;
+    font-size: 16px;
+    font-weight: Medium;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .i-phone1-pro1-group3 {
+    top: 329px;
+    left: 50px;
+    width: 289px;
+    height: 36px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background-color: rgba(231, 231, 231, 1);
+  }
+  .i-phone1-pro1-text06 {
+    top: 6.91259765625px;
+    left: 103px;
+    color: rgba(123, 123, 123, 1);
+    width: 83px;
+    height: auto;
+    position: absolute;
+    font-size: 16px;
+    font-weight: Medium;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .i-phone1-pro1-group125 {
+    top: 419px;
+    left: 51px;
+    width: 289px;
+    height: 36px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background-color: rgba(231, 231, 231, 1);
+  }
+  .i-phone1-pro1-text08 {
+    top: 6.062550067901611px;
+    left: 89px;
+    color: rgba(123, 123, 123, 1);
+    width: 112px;
+    height: auto;
+    position: absolute;
+    font-size: 16px;
+    font-weight: Medium;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .i-phone1-pro1-group5 {
+    top: 493px;
+    left: 52px;
+    width: 289px;
+    height: 46px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background-color: rgba(0, 0, 0, 1);
+  }
+  .i-phone1-pro1-text10 {
+    top: 9px;
+    left: 106px;
+    color: rgba(234, 234, 234, 1);
+    width: 77px;
+    height: auto;
+    position: absolute;
+    font-size: 18px;
+    font-weight: ExtraBold;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 800;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .i-phone1-pro1-text12 {
+    top: 602px;
+    left: 52px;
+    color: rgba(127, 127, 127, 1);
+    width: 196px;
+    height: auto;
+    position: absolute;
+    font-size: 15px;
+    font-weight: Bold;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .i-phone1-pro1-text14 {
+    top: 602px;
+    left: 215px;
+    color: rgba(255, 255, 255, 1);
+    width: 51px;
+    height: auto;
+    position: absolute;
+    font-size: 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
+    font-weight: Bold;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .i-phone1-pro1-frame1 {
+    top: 586px;
+    left: 250px;
+    width: 61px;
+    height: 46px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .i-phone1-pro1-group123 {
+    top: 667px;
+    left: 72px;
+    width: 313.0000305175781px;
+    height: 44px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .i-phone1-pro1-text16 {
+    top: 9.830810546875px;
+    left: 61.4478759765625px;
+    color: rgba(255, 255, 255, 1);
+    width: 252px;
+    height: auto;
+    position: absolute;
+    font-size: 18px;
+    font-weight: Medium;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .i-phone1-pro1-vector {
+    top: 0px;
+    left: 0px;
+    width: 44px;
+    height: 44px;
+    position: absolute;
+  }
+  .i-phone1-pro1-group124 {
+    top: 718px;
+    left: 72px;
+    width: 313px;
+    height: 50px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .i-phone1-pro1-text18 {
+    top: 13.636361122131348px;
+    left: 71.21954345703125px;
+    color: rgba(255, 255, 255, 1);
+    width: 242px;
+    height: auto;
+    position: absolute;
+    font-size: 18px;
+    font-weight: Medium;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .i-phone1-pro1-vector1 {
+    top: 0px;
+    left: 0px;
+    width: 44px;
+    height: 50px;
+    position: absolute;
+  }
+  .i-phone1-pro1-screenshot2removebgpreview31 {
+    top: 7px;
+    left: 0px;
+    width: 393px;
+    height: 43px;
+    position: absolute;
+  }
+  @media(max-width: 2800px) {
+    .i-phone1-pro1-f23b259ec77e9dc83ffd2f41deb059e61 {
+      top: -2px;
+      left: 0px;
+      width: 393px;
+      height: 852px;
+    }
+  }
+
+.login-link {
+    text-decoration: none; /* remove underline */
+    color: white; /* change color to white */
+}
+  
