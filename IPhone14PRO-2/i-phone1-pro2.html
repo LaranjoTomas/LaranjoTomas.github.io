@@ -1,5 +1,10 @@
-<div>
+<!DOCTYPE html>
+<html>
+<head>
   <link href="./i-phone1-pro2.css" rel="stylesheet" />
+  <script src="../Backend.js"></script>
+</head>
+<body>
   <div class="i-phone1-pro2-container">
     <div class="i-phone1-pro2-i-phone1-pro2">
       <img
@@ -15,11 +20,21 @@
       <span class="i-phone1-pro2-text"><span>Welcome Back!</span></span>
       <span class="i-phone1-pro2-text02"><span>Log in</span></span>
       <div class="i-phone1-pro2-group126">
-        <span class="i-phone1-pro2-text04"><span>Username or Email</span></span>
+        <span class="i-phone1-pro2-text04">
+          <span><input type="text" id="username-input" class="search-input" placeholder="UserName" /></span>
+        </span>
       </div>
       <div class="i-phone1-pro2-group1261">
-        <span class="i-phone1-pro2-text06"><span>Password</span></span>
+        <span class="i-phone1-pro2-text06">
+          <span><input type="password" id="password-input" class="search-input" placeholder="Password" /></span>
+        </span>
       </div>
+      <div class="i-phone1-pro1-group4">
+        <span class="i-phone1-pro1-text12">
+          <span><button id="login-button" onclick="handleLogin()">Login</button></span>
+        </span>
+      </div>
+
       <a href="../IPhone14PRO-3/i-phone1-pro3.html" class="login-link">
         <div class="i-phone1-pro2-group1262">
           <span class="i-phone1-pro2-text08"><span>Log In</span></span>
@@ -52,4 +67,62 @@
       </div>
     </div>
   </div>
-</div>
+  <script>
+    // Function to load the database
+    function loadDatabase(callback) {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
+                var database = JSON.parse(xmlhttp.responseText);
+                callback(database);
+            }
+        };
+        xmlhttp.open("GET", "database.json", true);
+        xmlhttp.send();
+    }
+
+    // Global variable to hold the database
+    var database;
+
+    // Load the database
+    loadDatabase(function(data) {
+        database = data;
+    });
+
+    function signUp(username, email, password) {
+        var newUser = { username: username, email: email, password: password };
+        database.users.push(newUser);
+        saveDatabase();
+    }
+
+    function login(username, password) {
+        var user = database.users.find(function(user) {
+            return user.username === username && user.password === password;
+        });
+        return user;
+    }
+
+    function saveDatabase() {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("POST", "save-database.php", true);
+        xmlhttp.setRequestHeader("Content-type", "application/json");
+        xmlhttp.send(JSON.stringify(database));
+    }
+
+    function handleLogin() {
+        var username = document.getElementById("username-input").value;
+        var password = document.getElementById("password-input").value;
+
+        var user = login(username, password);
+        if (user) {
+            console.log("Login successful!");
+            // Perform actions for successful login (e.g., redirect to a new page)
+            window.location.href = "another-page.html"; // Replace "another-page.html" with the desired destination page
+        } else {
+            console.log("Invalid username or password.");
+            alert("Invalid username or password."); // Display an error message
+        }
+    }
+  </script>
+</body>
+</html>
