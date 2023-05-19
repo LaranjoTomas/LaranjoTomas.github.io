@@ -32,13 +32,6 @@ body {
     flex-shrink: 0;
     background-color: rgba(255, 255, 255, 1);
   }
-  .i-phone1-pro2-f23b259ec77e9dc83ffd2f41deb059e61 {
-    top: -299px;
-    left: -234px;
-    width: 393px;
-    height: 852px;
-    position: absolute;
-  }
   .i-phone1-pro2-screenshot2removebgpreview32 {
     top: 7px;
     left: 0px;
@@ -48,7 +41,7 @@ body {
   }
   .i-phone1-pro2-text {
     top: 61px;
-    left: 48px;
+    left: 100px;
     color: rgba(22, 24, 38, 1);
     width: 202px;
     height: auto;
@@ -61,6 +54,7 @@ body {
     line-height: normal;
     font-stretch: normal;
     text-decoration: none;
+    
   }
   .i-phone1-pro2-text02 {
     top: 139px;
