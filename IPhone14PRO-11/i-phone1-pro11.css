@@ -7,6 +7,64 @@ body {
   background-color: rgba(180, 172, 153, 1);
 }
 
+.search-input {
+  border: none;
+  background: none;
+  outline: none;
+  top: 8px;
+  left: 30px;
+  color: rgba(123, 123, 123, 1);
+  width: 112px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: Medium;
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 500;
+  background-repeat: no-repeat;
+  background-position: 10px 12px;
+  background-size: 15px 15px;
+}
+
+#lista {
+  border: 1px solid lightgray;
+  border-radius: 1px;
+  margin-top: 25px;
+  margin-left: 9px;
+  display: none;
+  position: fixed;
+  background-color: white;
+  z-index: 1000;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  padding: 5px 20px;
+  color: black;
+}
+
+.listItem:hover {
+  background-color: lightgrey;
+}
+
+.listItemImage {
+  height: 25px;
+  width: 25px;
+  display: inline;
+  vertical-align: middle;
+}
+
+.listItemText {
+  display: inline;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+
 .centered-container {
   display: flex;
   justify-content: center;

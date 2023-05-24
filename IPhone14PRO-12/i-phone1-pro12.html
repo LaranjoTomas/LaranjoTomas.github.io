@@ -2,8 +2,9 @@
 <html>
 <head>
   <link rel="stylesheet" href="./i-phone1-pro12.css" />
+  <script src="../Backend.js"></script>
 </head>
-<body>
+<body onload="bodyLoad()">
   <div class="centered-container">
     <div class="i-phone1-pro4-container">
       <div class="i-phone1-pro4-i-phone1-pro4">
@@ -13,11 +14,9 @@
           class="i-phone1-pro4-screenshot2removebgpreview33"
         />
         <div class="i-phone1-pro4-group127">
-          <img
-            src="./img/search.png"
-            alt="Rectangle21552"
-            class="i-phone1-pro4-rectangle2"
-          />
+          <img src="./img/search.png" alt="Rectangle21552" class="i-phone1-pro4-rectangle2"/>
+          <input id="searchInput" class="search-input" type="text" placeholder="Search" oninput="search()">
+          <div id="lista"></div>
         </div>
         <a href="../IPhone14PRO-5/i-phone1-pro5.html">
           <div class="i-phone1-pro4-framecomponentlottiehttpsassets2lottiefilescompack">

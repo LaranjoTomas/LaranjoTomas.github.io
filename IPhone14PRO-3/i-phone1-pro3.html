@@ -2,8 +2,9 @@
 <html>
 <head>
   <link href="./i-phone1-pro3.css" rel="stylesheet" />
+  <script src="../Backend.js"></script>
 </head>
-<body>
+<body onload="bodyLoad()">
   <div class="centered-container">
     <div class="i-phone1-pro3-container">
       <div class="i-phone1-pro3-i-phone1-pro3">
@@ -12,13 +13,13 @@
           alt="Screenshot2removebgpreview331552"
           class="i-phone1-pro3-screenshot2removebgpreview33"
         />
+
         <div class="i-phone1-pro3-group127">
-          <img
-            src="./img/search.png"
-            alt="Rectangle21552"
-            class="i-phone1-pro3-rectangle2"
-          />
+          <img src="./img/search.png" alt="Rectangle21552" class="i-phone1-pro3-rectangle2"/>
+          <input id="searchInput" class="search-input" type="text" placeholder="Search" oninput="search()">
+          <div id="lista"></div>
         </div>
+        
         <div class="i-phone1-pro3-group128">
           <span class="i-phone1-pro3-text02"><span>Pop</span></span>
         </div>
@@ -55,36 +56,40 @@
           alt="arrowsmallright11552"
           class="i-phone1-pro3-arrowsmallright1"
         />
-        <div class="i-phone1-pro3-polar">
-          <span class="i-phone1-pro3-text13"><span>Polar Regions</span></span>
-          <span class="i-phone1-pro3-text15">
-            <span>2023 | SWELL MAPS C21</span>
-          </span>
-          <span class="i-phone1-pro3-text17"><span>25,00&euro;</span></span>
-          <img
-            src="./img/artic.png"
-            alt="SwellMapsC21PolarRegions700x03e803e813522811552"
-            class="i-phone1-pro3-swell-maps-c2-polar-regions700x03e803e81352281"
-          />
-        </div>
-        <div class="i-phone1-pro3-gunnroses">
-          <span class="i-phone1-pro3-text19">
-            <span>
-              <span>Guns n' Roses</span>
-              <br />
-              <span></span>
+        <a href="../IPhone14PRO-13/i-phone1-pro13.html" class="login-link">
+          <div class="i-phone1-pro3-polar">
+            <span class="i-phone1-pro3-text13"><span>Polar Regions</span></span>
+            <span class="i-phone1-pro3-text15">
+              <span>2023 | SWELL MAPS C21</span>
             </span>
-          </span>
-          <span class="i-phone1-pro3-text24">
-            <span>2008 | Appetire 4 Destruction</span>
-          </span>
-          <span class="i-phone1-pro3-text26"><span>30,00&euro;</span></span>
-          <img
-            src="./img/guns&roses.png"
-            alt="GunsnRosesAppetiteforDestructionalbumcover03e803e81552"
-            class="i-phone1-pro3-gunsn-roses-appetitefor-destructionalbumcover03e803e8"
-          />
-        </div>
+            <span class="i-phone1-pro3-text17"><span>25,00&euro;</span></span>
+            <img
+              src="./img/artic.png"
+              alt="SwellMapsC21PolarRegions700x03e803e813522811552"
+              class="i-phone1-pro3-swell-maps-c2-polar-regions700x03e803e81352281"
+            />
+          </div>
+        </a>
+        <a href="../IPhone14PRO-16/i-phone1-pro16.html" class="login-link">
+          <div class="i-phone1-pro3-gunnroses">
+              <span class="i-phone1-pro3-text19">
+                <span>
+                  <span>Guns n' Roses</span>
+                  <br />
+                  <span></span>
+                </span>
+              </span>
+              <span class="i-phone1-pro3-text24">
+                <span>2008 | Appetite 4 Destruction</span>
+              </span>
+              <span class="i-phone1-pro3-text26"><span>30,00&euro;</span></span>
+              <img
+                src="./img/guns&roses.png"
+                alt="GunsnRosesAppetiteforDestructionalbumcover03e803e81552"
+                class="i-phone1-pro3-gunsn-roses-appetitefor-destructionalbumcover03e803e8"
+              />
+            </div>
+        </a>
         <a href="../IPhone14PRO-4/i-phone1-pro4.html" class="login-link">
           <div class="i-phone1-pro3-monkeys">
             <span class="i-phone1-pro3-text28">
@@ -105,37 +110,43 @@
             />
           </div>
         </a>
-        <div class="i-phone1-pro3-monkeys1">
-          <span class="i-phone1-pro3-text37"><span>Departure</span></span>
-          <span class="i-phone1-pro3-text39"><span>2016 | Journey</span></span>
-          <span class="i-phone1-pro3-text41"><span>27,00&euro;</span></span>
-          <img
-            src="./img/bug.png"
-            alt="MS0yODk3LmpwZWc11552"
-            class="i-phone1-pro3-ms0y--dk-lmpw--wc1"
-          />
-        </div>
-        <div class="i-phone1-pro3-monkeys2">
-          <span class="i-phone1-pro3-text43"><span>Adolescents</span></span>
-          <span class="i-phone1-pro3-text45"><span>2009 || La vendetta</span></span>
-          <span class="i-phone1-pro3-text47"><span>24,00&euro;</span></span>
-          <img
-            src="./img/idk.png"
-            alt="IMAGE71ujr2aprL11552"
-            class="i-phone1-pro3-image71ujr2apr-l1"
-          />
-        </div>
-        <div class="i-phone1-pro3-chkchk">
-          <span class="i-phone1-pro3-text49"><span>Shake the Shudder</span></span>
-          <span class="i-phone1-pro3-text51">
-          <span>2017 | !!! CHK CHK CHK</span></span>
-          <span class="i-phone1-pro3-text53"><span>25,00&euro;</span></span>
-          <img
-            src="./img/chkchkchk.png"
-            alt="ChkChkChkShaketheShudder03e803e81791111552"
-            class="i-phone1-pro3-chk-chk-chk-shakethe-shudder03e803e8179111"
-          />
-        </div>
+        <a href="../IPhone14PRO-14/i-phone1-pro14.html" class="login-link">
+          <div class="i-phone1-pro3-monkeys1">
+            <span class="i-phone1-pro3-text37"><span>Departure</span></span>
+            <span class="i-phone1-pro3-text39"><span>2016 | Journey</span></span>
+            <span class="i-phone1-pro3-text41"><span>27,00&euro;</span></span>
+            <img
+              src="./img/bug.png"
+              alt="MS0yODk3LmpwZWc11552"
+              class="i-phone1-pro3-ms0y--dk-lmpw--wc1"
+            />
+          </div>
+        </a>
+        <a href="../IPhone14PRO-17/i-phone1-pro17.html" class="login-link">
+          <div class="i-phone1-pro3-monkeys2">
+            <span class="i-phone1-pro3-text43"><span>Adolescents</span></span>
+            <span class="i-phone1-pro3-text45"><span>2009 || La vendetta</span></span>
+            <span class="i-phone1-pro3-text47"><span>24,00&euro;</span></span>
+            <img
+              src="./img/idk.png"
+              alt="IMAGE71ujr2aprL11552"
+              class="i-phone1-pro3-image71ujr2apr-l1"
+            />
+          </div>
+        </a>
+        <a href="../IPhone14PRO-15/i-phone1-pro15.html" class="login-link">
+          <div class="i-phone1-pro3-chkchk">
+            <span class="i-phone1-pro3-text49"><span>Shake the Shudder</span></span>
+            <span class="i-phone1-pro3-text51">
+            <span>2017 | !!! CHK CHK CHK</span></span>
+            <span class="i-phone1-pro3-text53"><span>25,00&euro;</span></span>
+            <img
+              src="./img/chkchkchk.png"
+              alt="ChkChkChkShaketheShudder03e803e81791111552"
+              class="i-phone1-pro3-chk-chk-chk-shakethe-shudder03e803e8179111"
+            />
+          </div>
+        </a>
         <div class="i-phone1-pro3-pagination">
           <img
             src="./img/setaesquerda.png"

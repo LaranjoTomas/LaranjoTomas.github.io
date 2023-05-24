@@ -1,0 +1,303 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgba(180, 172, 153, 1); 
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.search-input {
+  border: none;
+  background: none;
+  outline: none;
+  top: 8px;
+  left: 30px;
+  color: rgba(123, 123, 123, 1);
+  width: 112px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: Medium;
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 500;
+  background-repeat: no-repeat;
+  background-position: 10px 12px;
+  background-size: 15px 15px;
+}
+
+#lista {
+  border: 1px solid lightgray;
+  border-radius: 1px;
+  margin-top: 25px;
+  margin-left: 9px;
+  display: none;
+  position: fixed;
+  background-color: white;
+  z-index: 1000;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  padding: 5px 20px;
+  color: black;
+}
+
+.listItem:hover {
+  background-color: lightgrey;
+}
+
+.listItemImage {
+  height: 25px;
+  width: 25px;
+  display: inline;
+  vertical-align: middle;
+}
+
+.listItemText {
+  display: inline;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+.i-phone1-pro4-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+  }
+  .i-phone1-pro4-i-phone1-pro4 {
+    width: 100%;
+    height: 852px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(180, 172, 153, 1);
+  }
+  .i-phone1-pro4-screenshot2removebgpreview33 {
+    top: 7px;
+    left: 0px;
+    width: 393px;
+    height: 43px;
+    position: absolute;
+  }
+  .i-phone1-pro4-group127 {
+    top: 72px;
+    left: 10.013916015625px;
+    width: 310.986083984375px;
+    height: 38px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .i-phone1-pro4-rectangle2 {
+    top: 0px;
+    left: 8.986083984375px;
+    width: 302px;
+    height: 38px;
+    position: absolute;
+    border-radius: 15px;
+  }
+  .i-phone1-pro4-framecomponentlottiehttpsassets2lottiefilescompack {
+    top: 74px;
+    left: 340px;
+    width: 36px;
+    height: 34px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .i-phone1-pro4-vector {
+    top: 0px;
+    left: 0px;
+    width: 36px;
+    height: 34px;
+    position: absolute;
+  }
+  .i-phone1-pro4-arctic-monkeys-liveatthe-royal-albert-hall1 {
+    top: 152px;
+    left: 77px;
+    width: 240px;
+    height: 240px;
+    position: absolute;
+  }
+  .i-phone1-pro4-text02 {
+    top: 400px;
+    left: 120px;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 18px;
+    font-style: Bold;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .i-phone1-pro4-text04 {
+    top: 422px;
+    left: 144px;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 15px;
+    font-style: SemiBold;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .i-phone1-pro4-arrowsmallleft1 {
+    top: 117px;
+    left: 10px;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+  }
+  .i-phone1-pro4-vector24 {
+    top: 693px;
+    left: 177px;
+    width: 40px;
+    height: 42px;
+    position: absolute;
+  }
+  .i-phone1-pro4-text06 {
+    top: 530px;
+    left: 77px;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 13px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Fira Sans;
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .i-phone1-pro4-text08 {
+    top: 544px;
+    left: 77px;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 13px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Fira Sans;
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .i-phone1-pro4-text10 {
+    top: 559px;
+    left: 77px;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 13px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Fira Sans;
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .i-phone1-pro4-text12 {
+    top: 574px;
+    left: 77px;
+    color: rgba(0, 0, 0, 1);
+    width: 243px;
+    height: auto;
+    position: absolute;
+    font-size: 13px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Fira Sans;
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .i-phone1-pro4-text14 {
+    top: 591px;
+    left: 77px;
+    color: rgba(0, 0, 0, 1);
+    width: 243px;
+    height: auto;
+    position: absolute;
+    font-size: 13px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Fira Sans;
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .i-phone1-pro4-bookmark13 {
+    top: 693px;
+    left: 49px;
+    width: 42px;
+    height: 42px;
+    position: absolute;
+  }
+  .i-phone1-pro4-shoppingcartadd1 {
+    top: 693px;
+    left: 303px;
+    width: 42px;
+    height: 42px;
+    position: absolute;
+  }
+  .i-phone1-pro4-text16 {
+    top: 454px;
+    left: 130px;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 10px;
+    font-style: Medium;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .i-phone1-pro4-screenshot3removebgpreview21 {
+    top: 817px;
+    left: -18px;
+    width: 429px;
+    height: 35px;
+    position: absolute;
+  }
+  @media(max-width: 2800px) {
+    .i-phone1-pro4-i-phone1-pro4 {
+      flex: 1;
+      width: 393px;
+    }
+  }
