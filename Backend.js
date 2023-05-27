@@ -113,5 +113,3 @@ function toggleTextBox() {
 // Add event listener to the image
 const image = document.getElementById('image');
 image.addEventListener('click', showTextBox);
-
-$(function() { $("#visible").click(function() { $("#invisible").toggleClass("show"); }); });

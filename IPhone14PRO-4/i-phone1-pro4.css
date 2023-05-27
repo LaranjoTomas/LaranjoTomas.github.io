@@ -8,6 +8,21 @@ body {
 }
 
 
+.image-button {
+  background: url('./img/play.png') no-repeat center center;
+  background-size: cover;
+  border: none;
+  width: 24px; /* Adjust the width and height as per your image size */
+  height: 17px;
+  cursor: pointer;
+  outline: none;
+}
+
+.playButton {
+  cursor: pointer;
+  /* Add any additional styling you want for the button appearance */
+}
+
 .search-input {
   border: none;
   background: none;
