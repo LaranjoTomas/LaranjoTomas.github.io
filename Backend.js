@@ -98,3 +98,20 @@ function search() {
 function bodyLoad() {
     loadSearchData();
 }
+function toggleTextBox() {
+    var textBoxContainer = document.getElementById("textBoxContainer");
+    var textBox = document.getElementById("myTextBox");
+
+    if (textBoxContainer.style.display === "none") {
+      textBoxContainer.style.display = "block";
+      textBox.value = ""; // Clear the text box content when opening
+    } else {
+      textBoxContainer.style.display = "none";
+    }
+  }
+
+// Add event listener to the image
+const image = document.getElementById('image');
+image.addEventListener('click', showTextBox);
+
+$(function() { $("#visible").click(function() { $("#invisible").toggleClass("show"); }); });

@@ -3,6 +3,7 @@
 <head>
   <link href="./i-phone1-pro7.css" rel="stylesheet" />
   <script src="../Backend.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body onload="bodyLoad()">
   <div class="centered-container">
@@ -39,34 +40,38 @@
           />
         </a>
         <div class="i-phone1-pro7-group142">
-          <div class="i-phone1-pro7-editbtn">
-            <img
-              src="./img/edit.png"
-              alt="Vector1552"
-              class="i-phone1-pro7-vector24"
-            />
-          </div>
+            <div class="i-phone1-pro7-editbtn">
+              <div class="container">
+                <button class="image-button" onclick="toggleTextBox()"></button>
+                <div id="textBoxContainer" class="text-box-container">
+                  <textarea id="myTextBox" class="text-box"></textarea>
+                  <button class="close-button" onclick="toggleTextBox()">Close</button>
+                </div>
+              </div>
+            </div>
           <span class="i-phone1-pro7-text02"><span>Description</span></span>
         </div>
         <div class="i-phone1-pro7-group145">
           <div class="i-phone1-pro7-editbtn1">
-            <img
-              src="./img/edit.png"
-              alt="Vector1552"
-              class="i-phone1-pro7-vector25"
-            />
+            <div class="container">
+              <button class="image-button" onclick="toggleTextBox()"></button>
+              <div id="textBoxContainer" class="text-box-container">
+                <textarea id="myTextBox" class="text-box"></textarea>
+                <button class="close-button" onclick="toggleTextBox()">Close</button>
+              </div>
+            </div>
           </div>
-          <span class="i-phone1-pro7-text04">
-            <span>Additional information</span>
-          </span>
+          <span class="i-phone1-pro7-text04"><span>Additional information</span></span>
         </div>
         <div class="i-phone1-pro7-group144">
           <div class="i-phone1-pro7-editbtn2">
-            <img
-              src="./img/edit.png"
-              alt="Vector1552"
-              class="i-phone1-pro7-vector26"
-            />
+            <div class="container">
+              <button class="image-button" onclick="toggleTextBox()"></button>
+              <div id="textBoxContainer" class="text-box-container">
+                <textarea id="myTextBox" class="text-box"></textarea>
+                <button class="close-button" onclick="toggleTextBox()">Close</button>
+              </div>
+            </div>
           </div>
           <span class="i-phone1-pro7-text06">
             <span>State of the product</span>
@@ -74,11 +79,13 @@
         </div>
         <div class="i-phone1-pro7-group143">
           <div class="i-phone1-pro7-editbtn3">
-            <img
-              src="./img/edit.png"
-              alt="Vector1552"
-              class="i-phone1-pro7-vector27"
-            />
+            <div class="container">
+              <button class="image-button" onclick="toggleTextBox()"></button>
+              <div id="textBoxContainer" class="text-box-container">
+                <textarea id="myTextBox" class="text-box"></textarea>
+                <button class="close-button" onclick="toggleTextBox()">Close</button>
+              </div>
+            </div>
           </div>
           <span class="i-phone1-pro7-text08"><span>Price</span></span>
         </div>
