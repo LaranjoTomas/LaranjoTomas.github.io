@@ -2,9 +2,14 @@
 <html>
 <head>
   <link href="./i-phone1-pro2.css" rel="stylesheet" />
-  <script src="../Backend.js"></script>
 </head>
-<body>
+<script>
+  function checkUsers(){
+    var teste = localStorage.getItem("users")
+    console.log("All users:", teste);
+  }
+</script>
+<body onload="checkUsers()">
   <div class="i-phone1-pro2-container">
     <div class="i-phone1-pro2-i-phone1-pro2">
       <img
@@ -35,7 +40,7 @@
         </span>
       </div>
 
-      <a href="../IPhone14PRO-3/i-phone1-pro3.html" class="login-link">
+      <a onclick="handleLogin()" class="login-link">
         <div class="i-phone1-pro2-group1262">
           <span class="i-phone1-pro2-text08"><span>Log In</span></span>
         </div>
@@ -65,64 +70,34 @@
         <div class="i-phone1-pro2-frame2">
         <span class="i-phone1-pro2-text16"><span>Sign up</span></span>
       </div>
-    </div>
-  </div>
-  <script>
-    // Function to load the database
-    function loadDatabase(callback) {
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
-            if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
-                var database = JSON.parse(xmlhttp.responseText);
-                callback(database);
-            }
-        };
-        xmlhttp.open("GET", "database.json", true);
-        xmlhttp.send();
-    }
+      <script>
+        function handleLogin() {
+          var username = document.getElementById("username-input").value;
+          var password = document.getElementById("password-input").value;
 
-    // Global variable to hold the database
-    var database;
-
-    // Load the database
-    loadDatabase(function(data) {
-        database = data;
-    });
-
-    function signUp(username, email, password) {
-        var newUser = { username: username, email: email, password: password };
-        database.users.push(newUser);
-        saveDatabase();
-    }
-
-    function login(username, password) {
-        var user = database.users.find(function(user) {
-            return user.username === username && user.password === password;
-        });
-        return user;
-    }
-
-    function saveDatabase() {
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.open("POST", "save-database.php", true);
-        xmlhttp.setRequestHeader("Content-type", "application/json");
-        xmlhttp.send(JSON.stringify(database));
-    }
-
-    function handleLogin() {
-        var username = document.getElementById("username-input").value;
-        var password = document.getElementById("password-input").value;
-
-        var user = login(username, password);
-        if (user) {
-            console.log("Login successful!");
+          // Retrieve the users from localStorage or create an empty array if it doesn't exist
+          var users = JSON.parse(localStorage.getItem("users")) || [];
+          console.log(users);
+          console.log(username+" "+password)
+          var user = login(username, password, users);
+          if (user) {
+            alert("Login successful");
             // Perform actions for successful login (e.g., redirect to a new page)
-            window.location.href = "another-page.html"; // Replace "another-page.html" with the desired destination page
-        } else {
+            window.location.href = "../IPhone14PRO-3/i-phone1-pro3.html"; // Replace "another-page.html" with the desired destination page
+          } else {
             console.log("Invalid username or password.");
             alert("Invalid username or password."); // Display an error message
+          }
         }
-    }
-  </script>
+
+        function login(username, password, users) {
+          var user = users.find(function (user) {
+            return user.username === username && user.password === password;
+          });
+          return user;
+        }
+      </script>
+    </div>
+  </div>
 </body>
 </html>

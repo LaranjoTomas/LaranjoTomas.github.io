@@ -2,10 +2,17 @@
 <html>
 <head>
     <link href="./i-phone1-pro1.css" rel="stylesheet" />
-    <script src="./Backend.js"></script>
+    <!--<script src="./Backend.js"></script>-->
+    <script src="./main.js"></script>
     <title>MOTP - Melodies of the Past</title>
 </head>
-<body>
+<script>
+  function checkUsers(){
+    var teste = localStorage.getItem("users")
+    console.log("All users:", teste);
+  }
+</script>
+<body onload="checkUsers()">
   <div class="centered-container">
     <div class="i-phone1-pro1-container">
       <div class="i-phone1-pro1-i-phone1-pro1">
@@ -17,6 +24,7 @@
         <span class="i-phone1-pro1-text02">
           <span>Welcome to Melodies of the Past</span>
         </span>
+        <form onsubmit="signup(event)">
         <div class="i-phone1-pro1-group2">
           <span class="i-phone1-pro1-text04"><span><input type="text" id="username-input" class="search-input" placeholder="Username" /></span></span>
         </div>
@@ -26,11 +34,11 @@
         <div class="i-phone1-pro1-group125">
           <span class="i-phone1-pro1-text08"><span><input type="password" id="password-input" class="search-input" placeholder="Password" /></span></span>
         </div>        
-        <a href="./IPhone14PRO-3/i-phone1-pro3.html" class="login-link">
+        <button type="submit" class="login-link">
           <div class="i-phone1-pro1-group5">
             <span class="i-phone1-pro1-text10"><span>Sign up</span></span>
           </div>
-        </a>
+        </button>
         <a href="./IPhone14PRO-2/i-phone1-pro2.html" class="login-link">
           <div>  
             <span class="i-phone1-pro1-text12">
@@ -65,6 +73,42 @@
           src="./img/image.png"
           class="i-phone1-pro1-screenshot2removebgpreview31"
         />
+        <script>
+          // List of users
+          var users = [];
+
+          function signup(event) {
+            event.preventDefault();
+
+            var username = document.getElementById("username-input").value;
+            var password = document.getElementById("password-input").value;
+
+            var user = {
+              username: username,
+              password: password
+            };
+
+            // Retrieve the existing users from localStorage or create an empty array
+            var users = JSON.parse(localStorage.getItem("users")) || [];
+
+            // Add the new user to the users array
+            users.push(user);
+
+            // Store the updated users array in localStorage
+            localStorage.setItem("users", JSON.stringify(users));
+
+            // Clear the input fields
+            document.getElementById("username-input").value = "";
+            document.getElementById("email-input").value = "";
+            document.getElementById("password-input").value = "";
+
+            console.log("User signed up:", user);
+            console.log("All users:", users);
+
+            alert("Successful sign up!");
+          }
+
+        </script>
       </div>
     </div>
   </div>
